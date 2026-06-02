@@ -5,7 +5,7 @@ const translations = {
     navWhy: '优势',
     navContact: '联系',
     heroEyebrow: '诺和信（深圳）商务服务有限公司',
-    heroTitle: '连接全球优质供应商，服务中国市场',
+    heroTitle: '连接全球优质食品供应商，服务中国消费者',
     heroDesc: '我们帮助境外优质食品与饮料品牌高效进入中国市场，完成合规、清关与渠道落地。',
     heroBtnAbout: '了解我们',
     heroBtnContact: '快速咨询',
@@ -58,8 +58,8 @@ const translations = {
     navProducts: 'Products',
     navWhy: 'Why Us',
     navContact: 'Contact',
-    heroEyebrow: 'Novasin Shenzhen Co., Ltd.',
-    heroTitle: 'Connecting global suppliers to the China market',
+    heroEyebrow: 'Novosin Shenzhen Co., Ltd.',
+    heroTitle: 'Connecting global suppliers to the China consumers',
     heroDesc: 'We help international food & beverage brands enter China efficiently—compliance, clearance, and channel launch.',
     heroBtnAbout: 'About Us',
     heroBtnContact: 'Quick Consult',
@@ -67,7 +67,7 @@ const translations = {
     badge2: 'Channel Distribution',
     badge3: 'Local Support',
     aboutTitle: 'About Us',
-    aboutDesc: 'Novasin provides end-to-end import services focused on F&B and FMCG market entry and channel building in China.',
+    aboutDesc: 'Novosin provides end-to-end import services focused on F&B and FMCG market entry and channel building in China.',
     missionTitle: 'Our Mission',
     missionDesc: 'Bring world-class ingredients and brands to China while offering sustainable growth pathways for partners.',
     advantageTitle: 'Our Strengths',
@@ -105,7 +105,7 @@ const translations = {
     communicationDesc: 'Call or email and we will respond within 1-2 business days.',
     contactPhoneLabel: 'Phone',
     contactEmailLabel: 'Email',
-    footerText: '© 2024 Novasin Shenzhen Co., Ltd. — All rights reserved.'
+    footerText: '© 2024 Novosin Shenzhen Co., Ltd. — All rights reserved.'
   }
 };
 

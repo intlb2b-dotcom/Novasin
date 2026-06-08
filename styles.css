@@ -725,7 +725,9 @@ p {
   .header-actions {
     gap: 0.5rem;
   }
-
+.site-header {
+  padding: 0.5rem 0; /* 调整整体高度 */
+}
   .button--small {
     padding: 0.5rem 0.5rem;
     font-size: 0.5rem;

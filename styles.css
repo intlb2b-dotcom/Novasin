@@ -799,14 +799,14 @@ p {
   }
 
   .header-actions {
-    gap: 0.15rem;
+    gap: 0.1rem;
   }
 .site-header {
   padding: 0.5rem 0; /* 调整整体高度 */
 }
   .button--small {
     padding: 0.5rem 0.5rem;
-    font-size: 0.4rem;
+    font-size: 0.35rem;
   }
 
   .footer-social {

@@ -1,3 +1,4 @@
+/* CSS变量定义 - 全局颜色和样式变量 */
 :root {
   color-scheme: dark;
   --bg: #0c0a09;
@@ -12,6 +13,7 @@
   --shadow: 0 25px 50px -12px rgba(12, 10, 9, 0.25);
 }
 
+/* 全局样式 - 基础重置和默认样式 */
 * {
   box-sizing: border-box;
 }
@@ -46,7 +48,7 @@ a.button {
   font: inherit;
 }
 
-/* Compliance Banner */
+/* 合规声明横幅 - 顶部GACC合规声明 */
 .compliance-banner {
   background: linear-gradient(135deg, #92400e 0%, #c2410c 100%);
   color: white;
@@ -59,7 +61,7 @@ a.button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
+/* 网站头部导航栏 - 固定顶部导航 */
 .site-header {
   position: fixed;
   inset: 0 0 auto 0;
@@ -72,6 +74,7 @@ a.button {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+/* 头部内部容器 - 布局和间距 */
 .header-inner {
   display: flex;
   align-items: center;
@@ -82,6 +85,7 @@ a.button {
   padding: 1rem 0;
 }
 
+/* 品牌Logo区域 - 公司标识 */
 .brand {
   display: flex;
   align-items: center;
@@ -93,6 +97,7 @@ a.button {
   font-size: 1.05rem;
 }
 
+/* 品牌图标 - Logo图片容器 */
 .brand-icon {
   display: flex;
   align-items: center;
@@ -106,12 +111,14 @@ a.button {
   flex-shrink: 0;
 }
 
+/* 品牌文字 - 公司名称和副标题 */
 .brand-text {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
+/* 品牌名称 - 公司名称渐变效果 */
 .brand-name {
   font-size: 1.1rem;
   font-weight: 900;
@@ -122,6 +129,7 @@ a.button {
   background-clip: text;
 }
 
+/* 品牌副标题 - 公司服务类型 */
 .brand-subtitle {
   color: #fbbf24;
   font-size: 1.0rem;
@@ -134,6 +142,7 @@ a.button {
   background-clip: text;
 }
 
+/* 导航链接 - 主要菜单项 */
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -141,6 +150,7 @@ a.button {
   gap: 1.5rem;
 }
 
+/* 导航链接样式 - 字体和悬停效果 */
 .nav-links a {
   color: var(--text);
   font-size: 1rem;
@@ -150,23 +160,27 @@ a.button {
   text-shadow: 0 0 0 transparent;
 }
 
+/* 导航链接悬停效果 - 金色发光 */
 .nav-links a:hover {
   color: #fbbf24;
   transform: translateY(-2px);
   text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
 }
 
+/* 头部操作区 - 购买按钮和语言切换 */
 .header-actions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
+/* 小按钮样式 - 用于头部操作按钮 */
 .button--small {
   padding: 0.5rem 0.8rem;
   font-size: 0.78rem;
 }
 
+/* 图标按钮样式 - 移动端菜单按钮 */
 .button--icon {
   width: 44px;
   height: 44px;
@@ -176,6 +190,7 @@ a.button {
   justify-content: center;
 }
 
+/* 移动端导航 - 手机端菜单 */
 .mobile-nav {
   display: none;
   flex-direction: column;
@@ -187,6 +202,7 @@ a.button {
   padding: 1rem 1.5rem 1.5rem;
 }
 
+/* 移动端导航链接样式 */
 .mobile-nav a {
   color: var(--text);
   font-size: 0.95rem;
@@ -196,10 +212,12 @@ a.button {
   transition: background 0.2s ease;
 }
 
+/* 移动端导航悬停效果 */
 .mobile-nav a:hover {
   background: rgba(255, 255, 255, 0.05);
 }
 
+/* 移动端导航打开状态 */
 .mobile-nav.open {
   display: flex;
 }
@@ -208,6 +226,7 @@ a.button {
   color: var(--accent);
 }
 
+/* 幽灵按钮样式 - 透明背景按钮 */
 .button--ghost {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(148, 163, 184, 0.2);
@@ -220,13 +239,14 @@ a.button {
   transition: all 0.2s ease;
 }
 
+/* 幽灵按钮激活状态 */
 .button--ghost.active {
   background: linear-gradient(to right, #d97706, #ea580c);
   color: #fff;
   border-color: transparent;
 }
 
-/* Hero Section */
+/* 首屏Hero区域 - 主视觉区域 */
 .hero {
   position: relative;
   padding: 9rem 1.5rem 4rem;
@@ -241,6 +261,7 @@ a.button {
   background-position: center;
 }
 
+/* Hero区域网格背景效果 */
 .hero::before {
   content: "";
   position: absolute;
@@ -253,6 +274,7 @@ a.button {
   pointer-events: none;
 }
 
+/* Hero内容网格布局 */
 .hero-grid {
   display: grid;
   width: min(1120px, calc(100% - 3rem));
@@ -262,6 +284,7 @@ a.button {
   max-width: 48rem;
 }
 
+/* Hero徽章 - 公司名称标签 */
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -278,6 +301,7 @@ a.button {
   margin-bottom: 2rem;
 }
 
+/* Hero徽章脉冲动画指示器 */
 .hero-badge::before {
   content: "";
   width: 0.375rem;
@@ -288,11 +312,13 @@ a.button {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+/* 脉冲动画关键帧 */
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
 }
 
+/* Hero主标题样式 */
 .hero h1 {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   line-height: 1.05;
@@ -301,6 +327,7 @@ a.button {
   letter-spacing: -0.025em;
 }
 
+/* Hero高亮文字渐变效果 */
 .hero-highlight {
   background: linear-gradient(to right, #fbbf24, #fb923c, #fcd34d);
   -webkit-background-clip: text;
@@ -308,6 +335,7 @@ a.button {
   background-clip: text;
 }
 
+/* Hero描述文字样式 */
 .hero p {
   color: #e7e5e4;
   font-size: 1.15rem;
@@ -317,6 +345,7 @@ a.button {
   font-weight: 300;
 }
 
+/* Hero操作按钮区域 */
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -324,12 +353,14 @@ a.button {
   margin-bottom: 2rem;
 }
 
+/* Hero底部徽章区域 */
 .hero__badges {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
+/* Hero徽章标签样式 */
 .hero__badges span {
   display: inline-flex;
   align-items: center;
@@ -341,6 +372,7 @@ a.button {
   font-size: 0.85rem;
 }
 
+/* 通用按钮基础样式 */
 .button {
   display: inline-flex;
   align-items: center;
@@ -356,56 +388,64 @@ a.button {
   transition: all 0.2s ease;
 }
 
+/* 主要按钮样式 - 橙色渐变 */
 .button--primary {
   background: linear-gradient(to right, #f59e0b, #f97316);
   color: white;
   box-shadow: 0 20px 25px -5px rgba(124, 45, 18, 0.3);
 }
 
+/* 主要按钮悬停效果 */
 .button--primary:hover {
   background: linear-gradient(to right, #d97706, #ea580c);
   transform: translateY(-1px);
 }
 
+/* 次要按钮样式 - 透明背景 */
 .button--secondary {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
 
+/* 次要按钮悬停效果 */
 .button--secondary:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Container */
+/* 容器样式 - 内容居中容器 */
 .container {
   width: min(1120px, calc(100% - 3rem));
   margin: 0 auto;
 }
 
-/* Section */
+/* 通用区块样式 - 页面区块 */
 .section {
   padding: 4rem 1.5rem;
 }
 
+/* 关于区块 - 公司介绍区域 */
 .section--intro {
   background: rgba(245, 245, 244, 0.5);
   padding-top: 2rem;
 }
 
+/* 产品区块 - 产品展示区域 */
 .section--products {
   background: rgba(250, 250, 249, 1);
 }
 
+/* 优势区块 - 公司优势区域 */
 .section--focus {
   background: linear-gradient(to bottom, #f5f5f4, #fafaf9);
 }
 
+/* 联系区块 - 联系方式区域 */
 .section--contact {
   background: white;
 }
 
-/* Section Header */
+/* 区块头部样式 - 标题和标签 */
 .section-header {
   display: flex;
   align-items: center;
@@ -413,6 +453,7 @@ a.button {
   margin-bottom: 1.5rem;
 }
 
+/* 区块头部装饰线 */
 .section-header-line {
   width: 3rem;
   height: 1px;
@@ -420,6 +461,7 @@ a.button {
   flex-shrink: 0;
 }
 
+/* 区块头部标签文字 */
 .section-header-label {
   font-size: 0.75rem;
   font-weight: 700;
@@ -428,6 +470,7 @@ a.button {
   color: #c2410c;
 }
 
+/* 二级标题样式 - 区块主标题 */
 h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.15;
@@ -437,6 +480,7 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+/* 三级标题样式 - 卡片标题 */
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -444,6 +488,7 @@ h3 {
   letter-spacing: -0.01em;
 }
 
+/* 段落文字样式 - 正文内容 */
 p {
   color: #44403c;
   line-height: 1.8;
@@ -451,7 +496,7 @@ p {
   font-weight: 400;
 }
 
-/* Cards */
+/* 卡片网格布局 - 关于区块卡片 */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -459,6 +504,7 @@ p {
   margin-top: 2rem;
 }
 
+/* 卡片样式 - 关于区块单个卡片 */
 .card {
   background: rgba(255, 251, 235, 1);
   border: 1px solid rgba(253, 230, 138, 0.6);
@@ -467,6 +513,7 @@ p {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+/* 卡片标题样式 */
 .card h3 {
   color: #1c1917;
   margin-bottom: 0.75rem;
@@ -477,23 +524,26 @@ p {
   font-weight: 700;
 }
 
+/* 卡片图标样式 */
 .card-icon {
   font-size: 1.5rem;
 }
 
+/* 卡片内容文字样式 */
 .card p {
   font-size: 0.875rem;
   color: #57534e;
   line-height: 1.7;
 }
 
-/* Product Grid */
+/* 产品网格布局 - 产品展示网格 */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
 }
 
+/* 产品卡片样式 - 单个产品卡片 */
 .product-card {
   background: rgba(250, 250, 249, 1);
   border: 1px solid rgba(231, 229, 228, 1);
@@ -503,34 +553,39 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* 产品卡片悬停效果 */
 .product-card:hover {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
 }
 
+/* 产品卡片图片样式 */
 .product-card__image {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
+/* 产品卡片内容区域 */
 .product-card__content {
   padding: 1.75rem;
 }
 
+/* 产品卡片标题样式 */
 .product-card h3 {
   color: #1c1917;
   margin-bottom: 0.75rem;
   font-weight: 700;
 }
 
+/* 产品卡片描述文字样式 */
 .product-card p {
   font-size: 0.875rem;
   color: #57534e;
   line-height: 1.7;
 }
 
-/* Channel Image Block */
+/* 渠道图片区块 - 分销网络图片展示 */
 .channel-image-block {
   margin: 3rem auto 0;
   max-width: 900px;
@@ -539,6 +594,7 @@ p {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
+/* 渠道图片样式 */
 .channel-image-block img {
   width: 100%;
   max-height: 420px;
@@ -547,6 +603,7 @@ p {
   height: auto;
 }
 
+/* 图片说明文字样式 */
 .image-caption {
   background: #f5f5f4;
   padding: 1.5rem;
@@ -557,13 +614,14 @@ p {
   margin: 0 auto;
 }
 
-/* About/Focus Grid */
+/* 优势区块网格布局 - 文字和高亮卡片 */
 .focus-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
 }
 
+/* 大屏幕优势区块布局 */
 @media (min-width: 1024px) {
   .focus-grid {
     grid-template-columns: 1.1fr 1fr;
@@ -571,6 +629,7 @@ p {
   }
 }
 
+/* 高亮卡片样式 - 优势区块重点展示 */
 .highlight-card {
   background: linear-gradient(135deg, rgba(28, 25, 23, 0.95), rgba(41, 37, 36, 0.95));
   border: 1px solid rgba(68, 64, 60, 0.6);
@@ -580,6 +639,7 @@ p {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
 }
 
+/* 高亮卡片标签样式 */
 .highlight-label {
   font-size: 0.75rem;
   font-weight: 700;
@@ -589,24 +649,27 @@ p {
   margin-bottom: 0.5rem;
 }
 
+/* 高亮卡片标题样式 */
 .highlight-card h3 {
   color: white;
   font-size: 1.875rem;
   margin-bottom: 1rem;
 }
 
+/* 高亮卡片内容样式 */
 .highlight-card p {
   color: #d6d3d1;
   font-size: 0.95rem;
 }
 
-/* Contact Grid */
+/* 联系区块网格布局 - 联系信息和联系卡片 */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
 }
 
+/* 大屏幕联系区块布局 */
 @media (min-width: 1024px) {
   .contact-grid {
     grid-template-columns: 1fr 1.2fr;
@@ -614,6 +677,7 @@ p {
   }
 }
 
+/* 联系信息列表样式 */
 .contact-list {
   list-style: none;
   padding: 0;
@@ -623,12 +687,14 @@ p {
   gap: 1.25rem;
 }
 
+/* 联系信息列表项样式 */
 .contact-list li {
   font-size: 0.95rem;
   color: #44403c;
   line-height: 1.7;
 }
 
+/* 联系信息标签样式 */
 .contact-list strong {
   color: #1c1917;
   display: block;
@@ -639,6 +705,7 @@ p {
   font-weight: 700;
 }
 
+/* 联系卡片样式 - 快速联系方式 */
 .contact-card {
   background: linear-gradient(135deg, rgba(255, 251, 235, 1), rgba(255, 247, 237, 1));
   border: 1px solid rgba(253, 230, 138, 0.6);
@@ -646,11 +713,13 @@ p {
   padding: 2rem;
 }
 
+/* 联系卡片标题样式 */
 .contact-card h3 {
   color: #1c1917;
   font-weight: 700;
 }
 
+/* 联系信息框样式 */
 .contact-box {
   background: white;
   border: 1px solid rgba(230, 230, 230, 1);
@@ -660,6 +729,7 @@ p {
   font-size: 0.875rem;
 }
 
+/* 联系信息框标签样式 */
 .contact-box span {
   display: block;
   color: #78716c;
@@ -667,12 +737,13 @@ p {
   margin-bottom: 0.25rem;
 }
 
+/* 联系信息框内容样式 */
 .contact-box strong {
   color: #1c1917;
   font-weight: 600;
 }
 
-/* Footer */
+/* 页脚样式 - 网站底部 */
 .footer {
   background: #0c0a09;
   color: #a8a29e;
@@ -682,6 +753,7 @@ p {
   border-top: 1px solid var(--border);
 }
 
+/* 页脚社交媒体链接区域 */
 .footer-social {
   display: flex;
   justify-content: center;
@@ -690,6 +762,7 @@ p {
   margin-top: 1.5rem;
 }
 
+/* 社交媒体链接样式 - 淘宝和抖音店铺 */
 .social-link {
   display: flex;
   flex-direction: column;
@@ -700,30 +773,33 @@ p {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* 社交媒体链接悬停效果 */
 .social-link:hover {
   color: #fbbf24;
   transform: translateY(-2px);
 }
 
+/* 社交媒体图标样式 */
 .social-icon {
   width: 26px;
   height: 26px;
   fill: currentColor;
 }
 
+/* 社交媒体标签文字样式 */
 .social-label {
   font-size: 0.75rem;
   font-weight: 600;
 }
 
-/* Responsive */
+/* 响应式设计 - 手机端适配 */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
   }
 
   .header-actions {
-    gap: 0.5rem;
+    gap: 0.45rem;
   }
 .site-header {
   padding: 0.5rem 0; /* 调整整体高度 */
@@ -760,15 +836,17 @@ p {
   }
 }
 
-/* Utility */
+/* 工具类 - 语言切换相关 */
 .en-text {
   display: none;
 }
 
+/* 英文模式下隐藏中文 */
 html.lang-en .zh-text {
   display: none;
 }
 
+/* 英文模式下显示英文 */
 html.lang-en .en-text {
   display: inline;
 }

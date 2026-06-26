@@ -61,7 +61,6 @@ a.button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* 网站头部导航栏 - 固定顶部导航 */
 .site-header {
   position: fixed;
   inset: 0 0 auto 0;
@@ -142,7 +141,6 @@ a.button {
   background-clip: text;
 }
 
-/* 导航链接 - 主要菜单项 */
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -160,21 +158,18 @@ a.button {
   text-shadow: 0 0 0 transparent;
 }
 
-/* 导航链接悬停效果 - 金色发光 */
 .nav-links a:hover {
   color: #fbbf24;
   transform: translateY(-2px);
   text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
 }
 
-/* 头部操作区 - 购买按钮和语言切换 */
 .header-actions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-/* 小按钮样式 - 用于头部操作按钮 */
 .button--small {
   padding: 0.5rem 0.8rem;
   font-size: 0.78rem;
@@ -246,7 +241,6 @@ a.button {
   border-color: transparent;
 }
 
-/* 首屏Hero区域 - 主视觉区域 */
 .hero {
   position: relative;
   padding: 9rem 1.5rem 4rem;
@@ -345,6 +339,24 @@ a.button {
   font-weight: 300;
 }
 
+.seo-keywords {
+  background: rgba(28, 25, 23, 0.5);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(87, 83, 78, 0.2);
+  border-bottom: 1px solid rgba(87, 83, 78, 0.2);
+}
+
+.seo-keywords p {
+  color: #78716c;
+  font-size: 0.7rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  word-break: break-word;
+}
+
 /* Hero操作按钮区域 */
 .hero-actions {
   display: flex;
@@ -372,7 +384,6 @@ a.button {
   font-size: 0.85rem;
 }
 
-/* 通用按钮基础样式 */
 .button {
   display: inline-flex;
   align-items: center;
@@ -614,7 +625,6 @@ p {
   margin: 0 auto;
 }
 
-/* 优势区块网格布局 - 文字和高亮卡片 */
 .focus-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -753,7 +763,6 @@ p {
   border-top: 1px solid var(--border);
 }
 
-/* 页脚社交媒体链接区域 */
 .footer-social {
   display: flex;
   justify-content: center;
@@ -786,7 +795,6 @@ p {
   fill: currentColor;
 }
 
-/* 社交媒体标签文字样式 */
 .social-label {
   font-size: 0.75rem;
   font-weight: 600;
@@ -798,32 +806,47 @@ p {
     display: none;
   }
 
+  /* 头部操作区 - 购买按钮和语言切换 */
   .header-actions {
     gap: 0.1rem;
   }
 .site-header {
   padding: 0.5rem 0; /* 调整整体高度 */
 }
+  /* 小按钮样式 - 用于头部操作按钮 */
   .button--small {
     padding: 0.5rem 0.5rem;
     font-size: 0.39rem;
   }
 
+  /* 页脚社交媒体链接区域 */
   .footer-social {
     gap: 1.5rem;
   }
 
+  /* 社交媒体图标样式 */
   .social-icon {
     width: 28px;
     height: 28px;
   }
 
+  /* 社交媒体标签文字样式 */
   .social-label {
     font-size: 0.7rem;
   }
 
+  /* Hero区域样式 */
   .hero {
     padding: 7rem 1.5rem 2rem;
+  }
+
+  .seo-keywords {
+    padding: 0.75rem 1rem;
+  }
+
+  .seo-keywords p {
+    font-size: 0.6rem;
+    line-height: 1.5;
   }
 
   h2 {
@@ -836,7 +859,6 @@ p {
   }
 }
 
-/* 工具类 - 语言切换相关 */
 .en-text {
   display: none;
 }
